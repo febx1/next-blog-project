@@ -20,6 +20,7 @@ model BlogPost {
   imageUrl    String
   authorName  String
   authorImage String
+  authorId    String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
