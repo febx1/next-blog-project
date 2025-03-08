@@ -28,6 +28,7 @@ export async function handleSubmission(formData: FormData) {
     },
   });
 
+  // revalidate cache from cms
   revalidatePath("/");
   return redirect("/dashboard");
 }
