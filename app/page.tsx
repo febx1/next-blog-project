@@ -18,6 +18,9 @@ async function getData() {
       authorId: true,
       updatedAt: true,
     },
+    orderBy: {
+      createdAt: "desc",
+    },
   });
 
   return data;
