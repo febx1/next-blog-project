@@ -19,7 +19,7 @@ async function getData(id: string) {
 export default async function DasbhoardRoute() {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
-  const data = await getData(user.id);
+  const data = await getData(user?.id);
 
   return (
     <div className="">
